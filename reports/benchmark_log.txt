@@ -1,0 +1,27 @@
+== openai/gpt-oss-120b
+  openai/gpt-oss-120b              fizzbuzz     PASS   2 tool calls    4.8s
+  openai/gpt-oss-120b              primes       PASS   2 tool calls    3.8s
+  openai/gpt-oss-120b              fix_average  PASS  11 tool calls   20.4s
+  openai/gpt-oss-120b              fix_discount PASS   7 tool calls   13.5s
+  openai/gpt-oss-120b              calculator   PASS   4 tool calls   16.1s
+  openai/gpt-oss-120b              word_count   PASS   3 tool calls   10.8s
+  openai/gpt-oss-120b              csv_summary  PASS   8 tool calls   20.5s
+  openai/gpt-oss-120b              stack        PASS   9 tool calls  135.2s
+== openai/gpt-oss-20b
+  openai/gpt-oss-20b               fizzbuzz     PASS   2 tool calls    1.6s
+  openai/gpt-oss-20b               primes       PASS   5 tool calls   20.6s
+  openai/gpt-oss-20b               fix_average  PASS   9 tool calls   48.1s
+  openai/gpt-oss-20b               fix_discount PASS  10 tool calls   72.1s
+  openai/gpt-oss-20b               calculator   PASS   3 tool calls   16.8s
+  openai/gpt-oss-20b               word_count   PASS   8 tool calls  124.7s
+  openai/gpt-oss-20b               csv_summary  PASS   7 tool calls   22.4s
+  openai/gpt-oss-20b               stack        PASS   3 tool calls   27.8s
+== qwen/qwen3.8-27b
+  qwen/qwen3.8-27b                 fizzbuzz     PASS   2 tool calls    2.1s
+  qwen/qwen3.8-27b                 primes       PASS  15 tool calls  490.7s  [APIStatusError: Error code: 413 - {'error': {'message': 'Req]
+  qwen/qwen3.8-27b                 fix_average  PASS   4 tool calls    4.8s
+  qwen/qwen3.8-27b                 fix_discount PASS  10 tool calls   94.2s
+  qwen/qwen3.8-27b                 calculator   PASS   3 tool calls   21.8s
+  qwen/qwen3.8-27b                 word_count   PASS   4 tool calls   26.4s
+  qwen/qwen3.8-27b                 csv_summary  PASS   4 tool calls   31.9s
+  qwen/qwen3.8-27b                 stack        PASS  17 tool calls  574.2s  [APIStatusError: Error code: 413 - {'error': {'message': 'Req]

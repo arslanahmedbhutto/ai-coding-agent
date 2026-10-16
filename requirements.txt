@@ -1,0 +1,9 @@
+langchain-core>=1.0
+langchain-groq>=1.0
+streamlit>=1.40
+python-dotenv>=1.0
+pandas>=2.2
+requests>=2.31
+matplotlib>=3.9
+# pytest is also used by the agent's run_tests tool
+pytest>=8
