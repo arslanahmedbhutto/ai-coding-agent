@@ -4,12 +4,12 @@
 
 Describe a coding task in plain English. The agent writes Python files, **runs them, reads the tracebacks and fixes its own code** until it works, all in a sandboxed workspace you can browse, edit, run and download. It runs on free LLMs on Groq and is benchmarked on tasks graded by hidden tests.
 
-![Agent run](docs/screenshots/agent_run.jpg)
-*Live run: "Build calculator.py with tests and run them." The agent wrote two files, ran pytest, and all 5 tests passed in 11 seconds.*
+![Agent run](docs/screenshots/agent_run.png)
+*Live run: "Build calculator.py with tests and run them." The agent wrote two files, ran pytest, and all 5 tests passed in about 12 seconds.*
 
 | Home | Files tab: edit, run and test any file |
 |---|---|
-| ![Home](docs/screenshots/home.jpg) | ![Files](docs/screenshots/files_tab.jpg) |
+| ![Home](docs/screenshots/home.png) | ![Files](docs/screenshots/files_tab.png) |
 
 ## Features
 
@@ -31,6 +31,11 @@ Describe a coding task in plain English. The agent writes Python files, **runs t
 | `qwen/qwen3.8-27b` | **8/8** | 7.4 | 156 s | 0 | 14 |
 
 ![Benchmark](reports/figures/benchmark.png)
+
+<details><summary>Benchmark tab in the app</summary>
+
+![Benchmark tab](docs/screenshots/benchmark_tab.png)
+</details>
 
 **What the numbers say**
 - **All three models solve every task, but not equally well.** gpt-oss-120b is the fastest and most direct. Qwen needed the loop-breaker 14 times, and on the free tier it hits token-per-minute limits, which is most of its 156 s average.
