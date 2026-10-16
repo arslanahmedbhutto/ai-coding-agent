@@ -27,7 +27,8 @@ class Workspace:
 
     # ---------- helpers ----------
     def path(self, filename: str) -> Path:
-        p = (self.dir / filename).resolve()
+        # Treat "\" as a separator on every OS, so "..\x" is rejected on Linux too
+        p = (self.dir / filename.replace("\\", "/")).resolve()
         if p != self.dir and self.dir not in p.parents:
             raise ValueError(f"'{filename}' is outside the workspace")
         return p
