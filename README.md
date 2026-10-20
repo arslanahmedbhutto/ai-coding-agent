@@ -1,6 +1,8 @@
 # 🤖 AI Coding Agent
 
-![tests](https://github.com/arslanahmedbhutto/ai-coding-agent/actions/workflows/tests.yml/badge.svg)
+[![Live demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-coding-agentgit.streamlit.app/) ![tests](https://github.com/arslanahmedbhutto/ai-coding-agent/actions/workflows/tests.yml/badge.svg)
+
+**▶ Try it live: [ai-coding-agentgit.streamlit.app](https://ai-coding-agentgit.streamlit.app/)** (bring your own free Groq key)
 
 Describe a coding task in plain English. The agent writes Python files, **runs them, reads the tracebacks and fixes its own code** until it works, all in a sandboxed workspace you can browse, edit, run and download. It runs on free LLMs on Groq and is benchmarked on tasks graded by hidden tests.
 
@@ -93,7 +95,7 @@ python -m benchmark.report
 
 ## Deploy it (free) on Streamlit Community Cloud
 
-1. Push this repo to GitHub (done).
+1. Push this repo to GitHub. This repo is deployed at [ai-coding-agentgit.streamlit.app](https://ai-coding-agentgit.streamlit.app/).
 2. Go to [share.streamlit.io](https://share.streamlit.io), sign in with GitHub, and click **Create app**.
 3. Choose this repo, branch `main`, main file `app/streamlit_app.py`, then click **Deploy**.
 4. Don't add a `GROQ_API_KEY` secret for a public app. Visitors paste their own free key in the sidebar.
